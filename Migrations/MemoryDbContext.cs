@@ -9,7 +9,7 @@ namespace ProjetoAPI.Context
             }
 
             // Define a tabela 'Produtos' no banco de dados
-            public DbSet<Memory> Produtos => Set<Memory>();
+            public DbSet<Memory> Memories => Set<Memory>();
         }
     }
 
