@@ -1,10 +1,14 @@
+using FluentValidation;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using MnemosyneAPI.Endpoints;
+using MnemosyneAPI.Model.Validates;
 using ProjetoAPI.Context;
 
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddValidatorsFromAssemblyContaining<MemoryValidator>();
 
 // Adiciona o serviço do Swagger
 builder.Services.AddEndpointsApiExplorer();
