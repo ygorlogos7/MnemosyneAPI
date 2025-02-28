@@ -17,6 +17,7 @@ namespace MnemosyneAPI.Model.Validates
             RuleFor(x => x.images)
                 .NotNull().WithMessage("Imagem e obrigatoria")
                 .NotEmpty().WithMessage("Imagem nao pode ser vazio");
+
         }
     }
 }
